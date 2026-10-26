@@ -1,0 +1,13 @@
+{
+  "name": "one-card-poker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/game.test.js",
+    "build": "python3 scripts/prepare-font.py",
+    "prestart": "python3 scripts/prepare-font.py",
+    "package": "python3 scripts/package-offline.py",
+    "start": "python3 -m http.server 4173 --directory dist --bind 127.0.0.1"
+  }
+}

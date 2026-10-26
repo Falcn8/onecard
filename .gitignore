@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+dist/assets/agraham-regular.otf
+exports/
+work/
+.openai/
