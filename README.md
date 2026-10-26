@@ -10,6 +10,8 @@ Run `npm run package` to create `exports/one-card-poker.html`, a personal-use st
 
 No package installation is required. Three.js and fonts are vendored locally. `npm start` automatically unpacks the Agraham font from its original ZIP for local use. For static hosting, run `npm run build` and serve `dist/`. Run `npm test` for the game logic checks. The build and packaging scripts use Python 3 and its standard library.
 
+For Vercel, keep the project Root Directory at the repository root. The checked-in `vercel.json` selects the Other framework preset, runs `npm run build`, and publishes `dist/` instead of the default `public/` directory.
+
 ## Rules and controls
 
 Both players ante $1 and draw different ranks from a 13 card suit. Check or bet $1. The opener alternates after each completed hand. When you open, the computer uses the supplied second-player probabilities. When the computer opens, it uses the supplied first-player probabilities. Facing a $1 bet, call $1 or fold. Net results are $1 after checks or folds and $2 after a called bet. All amounts are fictional.
